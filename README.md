@@ -6,14 +6,14 @@ project.
 
 ## Layout
 
-- `site/index.html` - the page (all JS is inline, no bundler needed)
-- `site/_astro/*.css` - the two stylesheets from the original build
-- `site/favicon.ico`
+- `index.html` - the page (all JS is inline, no bundler needed)
+- `_astro/*.css` - the two stylesheets from the original build
+- `favicon.ico`
 
 ## Local preview
 
-    python3 -m http.server 8099 --directory site
+    python3 -m http.server 8099
 
 ## Deploy
 
-    npx wrangler pages deploy site --project-name=<project>
+    npx wrangler pages deploy . --project-name=<project>
